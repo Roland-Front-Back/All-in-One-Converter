@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Converter</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="contents">
+                <h1 style="border-bottom: 4px dashed black;">All-in-One</h1>
+                <h2>Converter</h2>
+                <div class="selection">
+                    <label for="data-type-select-1" class="select-label-1">From:
+                        <select name="data-type" id="data-type-select-1" class="select-1">
+                            <option value="decimal">Decimal</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                            <option value="text">Text</option>
+                        </select>
+                    </label>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="34"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                    <label for="data-type-select-2" class="select-label-2">To:
+                        <select name="data-type" id="data-type-select-2" class="select-2">
+                            <option value="decimal">Decimal</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                            <option value="text">Text</option>
+                        </select>
+                    </label>
+                </div>
+                <textarea name="inputted-values" id="user-input" class="user-input" placeholder="Enter input..."></textarea>
+                <button class="convertbtn" id="convert-btn">Convert</button>
+                <textarea name="output" id="output" class="output"></textarea>
+            </div>
+        </main>
+    <footer>Develop by: stoaxcode</footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
