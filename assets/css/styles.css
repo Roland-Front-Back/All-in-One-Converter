@@ -1,160 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Liter&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Liter&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap");
 
 :root {
-    /* Colors */
-    --select-bg: #F1F1F1;
-    --select-line: #4D4D4D;
-    --green1: #089922;
+  /* Colors */
+  --select-bg: #f1f1f1;
+  --select-line: #4d4d4d;
+  --green1: #089922;
 
-    /* Fonts */
-    --poppins: "Poppins";
-    --merriweather: "Merriweather";
+  /* Fonts */
+  --poppins: "Poppins";
+  --merriweather: "Merriweather";
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  height: 100%;
+  background: rgb(121, 170, 83);
+  background: linear-gradient(
+    180deg,
+    rgba(121, 170, 83, 1) 20%,
+    rgba(48, 68, 33, 1) 71%
+  );
+}
+
+body {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  flex-wrap: wrap;
 }
 
 .container {
-    width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    background: rgb(121,170,83);
-    background: linear-gradient(180deg, rgba(121,170,83,1) 20%, rgba(48,68,33,1) 71%);
-}
-
-main {
-    width: 700px;
-    height: 700px;
-    border: 1px groove rgba(128, 128, 128, 0.5);
-    background-color: #f6eeee71;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  min-width: 60%;
+  max-width: 100%;
+  min-height: 600px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff77;
+  flex-wrap: wrap;
 }
 
 h1 {
-    margin-top: 5px;
-    font-family: var(--poppins);
-    font-size: 30px;
+  margin-top: 5px;
+  font-family: var(--poppins);
+  font-size: 30px;
 }
 
 h2 {
-    margin: -35px 0 10px 0;
-    font-family: var(--poppins);
-    font-size: 25px;
-    font-style: normal;
-    color: var(--green1);
+  margin: -35px 0 10px 0;
+  font-family: var(--poppins);
+  font-size: 25px;
+  font-style: normal;
+  color: var(--green1);
 }
 
 label {
-    font-family: var(--merriweather);
-    font-size: 15px;
-    font-weight: bold;
+  font-family: var(--merriweather);
+  font-size: 15px;
+  font-weight: bold;
 }
 
 option {
-    font-family: var(--poppins);
-    font-size: 12px;
+  font-family: var(--poppins);
+  font-size: 12px;
 }
 
 .contents {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 80%;
-    height: 80%;
-    gap: 30px;
-    background: rgb(200,241,164);
-    background: linear-gradient(180deg, rgba(200,241,164,1) 28%, rgba(41,87,1,1) 100%);
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-width: 80%;
+  max-width: 80%;
+  min-height: 80%;
+  max-height: 80%;
+  gap: 30px;
+  background: rgb(200, 241, 164);
+  background: linear-gradient(
+    180deg,
+    rgba(200, 241, 164, 1) 28%,
+    rgba(41, 87, 1, 1) 100%
+  );
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .selection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    height: 6%;
-    padding: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 80%;
+  min-height: 6%;
+  padding: 2px;
 }
 
 .select-1 {
-    text-align: center;
-    height: 28px;
-    border-radius: 6px;
-    background-color: var(--select-bg);
-    border: 1px groove var(--select-line);
+  text-align: center;
+  min-height: 28px;
+  border-radius: 6px;
+  background-color: var(--select-bg);
+  border: 1px groove var(--select-line);
 }
 
 svg {
-    width: 60px;
+  min-width: 60px;
 }
 
 .select-2 {
-    text-align: center;
-    height: 28px;
-    border-radius: 6px;
-    background-color: var(--select-bg);
-    border: 1px groove var(--select-line);
+  text-align: center;
+  min-height: 28px;
+  border-radius: 6px;
+  background-color: var(--select-bg);
+  border: 1px groove var(--select-line);
 }
 
 .user-input {
-    min-width: 340px;
-    max-width: 340px;
-    min-height: 50px;
-    max-height: 60px;
-    padding: 4px;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 5px;
-    border: 1px groove gray;
-    font-family: var(--poppins);
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  min-width: 330px;
+  max-width: 30%;
+  min-height: 10%;
+  max-height: 20%;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px groove gray;
+  font-family: var(--poppins);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    line-height: 20px;
 }
 
 .convertbtn {
-    margin: -15px 0 0 250px;
-    width: 80px;
-    height: 30px;
-    border-radius: 30px;
-    background: rgb(3,164,32);
-    background: linear-gradient(180deg, rgba(3,164,32,1) 51%, rgba(3,94,20,1) 100%);
-    color: #ffffff;
-    border: none;
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  margin: -15px 0 0 250px;
+  min-width: 80px;
+  min-height: 30px;
+  border-radius: 30px;
+  background: rgb(3, 164, 32);
+  background: linear-gradient(
+    180deg,
+    rgba(3, 164, 32, 1) 51%,
+    rgba(3, 94, 20, 1) 100%
+  );
+  color: #ffffff;
+  border: none;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 .output {
-    min-width: 400px;
-    max-width: 400px;
-    min-height: 140px;
-    max-height: 140px;
-    border-radius: 5px;
-    border: 1px groove gray;
-    padding: 4px;
-    font-size: 20px;
-    font-family: var(--poppins);
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  min-width: 350px;
+  max-width: 37%;
+  min-height: 100px;
+  max-height: 10%;
+  line-height: 20px;
+  border-radius: 5px;
+  border: 1px groove gray;
+  padding: 4px;
+  font-size: 20px;
+  font-family: var(--poppins);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  margin-bottom: 25px;
 }
 
 footer {
-    position: absolute;
-    bottom: 25px;
-    color: #ffffff;
-    font-size: 13px;
-    font-family: var(--poppins);
+  position: static;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: var(--poppins);
+}
+
+/* TO-DO: Fixed the media ovrlapping the layput when keyboard pops up */
+@media (max-width: 690px) {
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+  .container {
+    min-width: 60%;
+    min-height: 40%;
+  }
+  .contents {
+    min-width: 60%;
+    min-height: 60%;
+    padding: 10px;
+  }
+  .user-input {
+    min-width: 230px;
+    min-height: 40px;
+    font-size: 12px;
+    padding: 4px;
+    line-height: 10px;
+    font-weight: normal;
+  }
+  .output {
+    min-width: 230px;
+    min-height: 80px;
+    margin-bottom: 110px;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 4;
+  }
+  .convertbtn {
+    margin: -15px 0 -10px 150px;
+    min-width: 60px;
+    min-height: 30px;
+    font-size: 10px;
+  }
+  .selection {
+    min-width: 80%;
+    max-width: 100%;
+    min-height: 15%;
+    margin-top: -30px;
+  }
+  .select-1 {
+    min-width: 70px;
+    min-height: 10px;
+    max-height: 60%;
+  }
+  svg {
+    height: 20px;
+    margin-top: 14px;
+  }
+  .select-2 {
+    min-width: 70px;
+    min-height: 10px;
+  }
 }
