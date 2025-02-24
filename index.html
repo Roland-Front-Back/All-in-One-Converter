@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>All-in-One Converter</title>
 
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -14,9 +14,9 @@
         <h1 style="border-bottom: 4px dashed black">All-in-One</h1>
         <h2>Converter</h2>
         <div class="selection">
-          <label for="data-type-select-1" class="select-label"
+          <label for="select-1" class="select-label"
             >From:
-            <select name="data-type" id="data-type-select-1" class="select-1">
+            <select name="data-type" id="select-1" class="select-1">
               <option value="decimal">Decimal</option>
               <option value="binary">Binary</option>
               <option value="octal">Octal</option>
@@ -41,9 +41,9 @@
             <path d="M13 18l6 -6" />
             <path d="M13 6l6 6" />
           </svg>
-          <label for="data-type-select-2" class="select-label"
+          <label for="select-2" class="select-label"
             >To:
-            <select name="data-type" id="data-type-select-2" class="select-2">
+            <select name="data-type" id="select-2" class="select-2">
               <option value="decimal">Decimal</option>
               <option value="binary">Binary</option>
               <option value="octal">Octal</option>
@@ -52,17 +52,29 @@
             </select>
           </label>
         </div>
-        <textarea
-          name="inputted-values"
+        <label for="user-input" class="input-label"
+          id="text-label">Enter a decimal number:
+        </label>
+        <input
+          type="number"
+          name="number"
           id="user-input"
           class="user-input"
-          placeholder="Enter input..."
-        ></textarea>
+          value=""
+          required
+        />
         <button class="convertbtn" id="convert-btn">Convert</button>
-        <textarea name="output" id="output" class="output"></textarea>
+        <textarea
+          name="output"
+          id="output"
+          class="output"
+          placeholder="Output...."
+          cols="50"
+          rows="10"
+        ></textarea>
       </div>
     </div>
-    <footer>Develop by: stoaxcode</footer>
+    <!-- <footer>Develop by: stoaxcode</footer> -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>

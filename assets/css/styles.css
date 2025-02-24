@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-  min-width: 60%;
+  min-width: 600px;
   max-width: 100%;
   min-height: 600px;
   max-height: 600px;
@@ -128,10 +128,23 @@ svg {
   border: 1px groove var(--select-line);
 }
 
+.input-label {
+  margin-right: 145px;
+  font-family: var(--poppins);
+  font-size: 15px;
+  font-style: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .user-input {
-  min-width: 330px;
-  max-width: 30%;
-  min-height: 10%;
+  min-width: 70%;
+  max-width: 60%;
+  min-height: 45px;
   max-height: 20%;
   padding: 6px;
   font-size: 16px;
@@ -141,7 +154,9 @@ svg {
   font-family: var(--poppins);
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-    line-height: 20px;
+  line-height: 20px;
+  margin-top: -28px;
+  overflow: hidden;
 }
 
 .convertbtn {
@@ -199,9 +214,14 @@ footer {
     min-height: 60%;
     padding: 10px;
   }
+  .input-label {
+    font-size: 10px;
+    margin-right: 100px;
+    margin-top: -20px;
+  }
   .user-input {
     min-width: 230px;
-    min-height: 40px;
+    min-height: 35px;
     font-size: 12px;
     padding: 4px;
     line-height: 10px;
@@ -234,7 +254,7 @@ footer {
   }
   svg {
     height: 20px;
-    margin-top: 14px;
+    margin-top: 18px;
   }
   .select-2 {
     min-width: 70px;
