@@ -183,3 +183,5 @@ select1.addEventListener("change", () => {
 select2.addEventListener("change", () => {
   output.textContent = "";
 });
+
+// TODO: refractor this shit code in the future
